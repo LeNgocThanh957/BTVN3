@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất trong 3 số</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số thứ 1: ");
+    let b = +prompt("Nhập vào số thứ 2: ");
+    let c = +prompt("Nhập vào số thứ 3: ");
+
+    if(a > b && a > c) { alert(a+" là giá trị lớn nhất") }
+    if(a < b && b > c) { alert(b+" là giá trị lớn nhất") }
+    if(a < c && b < c) { alert(c+" là giá trị lớn nhất") }
+    if(a == b && a == c) { alert("Cả 3 giá trị bằng nhau") }
+    if(a == b && b > c) { alert(a+" và "+b+" là hai giá trị lớn nhất ") }
+    if(a == c && c > b) { alert(a+" và "+c+" là hai giá trị lớn nhất ") }
+    if(b == c && b > a) { alert(b+" và "+c+" là hai giá trị lớn nhất ") }
+</script>
+</body>
+</html>

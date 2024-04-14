@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đủ tuổi vào học lớp 10</title>
+</head>
+<body>
+
+<script>
+    let soTuoi= +prompt("Nhập vào tuổi: ");
+    while (true){
+        if(soTuoi < 0 || soTuoi > 100){
+            soTuoi = +prompt("Số tuổi nhập vào không phù hợp. Vui lòng nhập lại số tuổi: ");
+        }else break;
+    }
+    if (soTuoi < 15) {
+        alert("Học sinh không đủ điều kiện vào học lớp 10");
+    } else alert("Học sinh đã đủ điều kiện vào học lớp 10");
+</script>
+</body>
+</html>

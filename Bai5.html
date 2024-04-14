@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemBaiKiemTra = +prompt("Nhập vào Điểm bài kiểm tra: ");
+    let diemThiGiuaKi = +prompt("Nhập vào Điểm thi giữa kì: ");
+    let diemThiCuoiKi = +prompt("Nhập vào Điểm thi Cuối kì:");
+    while (true) {
+        if (diemBaiKiemTra < 0 || diemBaiKiemTra > 10) {
+            diemBaiKiemTra = +prompt("Nhập sai. Vui lòng nhập lại Điểm bài kiểm tra: ");
+        }
+        if (diemThiGiuaKi < 0 || diemThiGiuaKi > 10) {
+            diemThiGiuaKi = +prompt("Nhập sai. Vui lòng nhập lại Điểm thi giữa kì: ");
+        }
+        if (diemThiCuoiKi < 0 || diemThiCuoiKi > 10) {
+            diemThiCuoiKi = +prompt("Nhập sai. Vui lòng nhập lại Điểm thi Cuối kì:");
+        } else break;
+
+    }
+    let diemTrungBinhChung = (diemBaiKiemTra + (diemThiGiuaKi * 2) + (diemThiCuoiKi * 3)) / 6;
+    if (diemTrungBinhChung >= 8) {
+        alert("Học sinh có điểm trung bình chung: "+diemTrungBinhChung.toFixed(1)+". Đạt học sinh giỏi")
+    }
+    if (diemTrungBinhChung < 8 && diemTrungBinhChung >= 6.5) {
+        alert("Học sinh có điểm trung bình chung: "+diemTrungBinhChung.toFixed(1)+". Đạt học sinh khá")
+    } else alert("Học sinh có điểm trung bình chung: "+diemTrungBinhChung.toFixed(1)+". Đạt học sinh trung bình");
+
+</script>
+</body>
+</html>
